@@ -2153,19 +2153,22 @@
         display: none;
     }
 
-    /* Margins generales */
-    .margin-top {
-        margin-top: 25px;
+    /*********************************************** HEADER*****************************************************************
+***********************************************************************************************************************/
+    .header {
+        background-color: #c3c3c4;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        padding-top: 10px;
+        padding-bottom: 5px;
+        border-bottom: 1px solid #323232;
     }
 
-    .margin-botton {
-        margin-bottom: 25px;
-    }
-
-    /* Margen izquierdo del logo en el header */
-    .logo {
-        margin-left: 2px;
-        margin-right: 2px;
+    .logo-header {
+        width: 70px;
+        height: 70px;
+        border-radius: 10px;
     }
 
     /* Estilo de los links del menú del header */
@@ -2175,94 +2178,12 @@
         font-family: Arial, Helvetica, sans-serif;
     }
 
-    /* Estilo de los links del footer */
-    .links-footer {
-        text-decoration: none;
-        color: #323232;
-        font-size: 1rem;
-    }
-
-    /* Estilo de los links del main */
-    .links-main {
-        text-decoration: none;
-        color: #323232;
-        font-size: 0.8rem;
-    }
-
-    /* Estilo de las listas sin viñetas */
-    .estilo-lista {
-        margin-top: 10px;
-        list-style: none;
-    }
-
-    /* Estilo principal de los párrafos */
-    .estilo-parrafo {
-        color: black;
-        font-size: 1rem;
-        text-align: justify;
-        margin: 20px;
-    }
-
-    /* Estilo de las calificaciones de los clientes */
-    .estilo-calificaciones {
-        color: #323232;
-        font-size: 0.8rem;
-        text-align: center;
-        margin: 10px;
-    }
-
-
-
-    .color-text {
-        color: #323232;
-    }
-
-
-    .label-color {
-        color: #323232;
-        font-size: 1rem;
-
-    }
-
-    /**********************************************************************************************************************
-*******************************************************************************************************************/
-    /*aplicando flexbox en el header*/
-    .logo-header {
-        width: 100px;
-        height: 70px;
-        border-radius: 10px;
-    }
-
-    .header {
-        background-color: #dac9bf;
-        display: flex;
-        align-items: center;
-        justify-content: space-around;
-        padding-top: 10px;
-        padding-bottom: 5px;
-        gap: 160px;
-        border-bottom: 1px solid #323232;
-    }
-
-    .custom-button {
-        background-color: #ddd0c8;
-        border: none;
-        /* Elimina el borde si es necesario */
-    }
-
-
-    .div-menu label {
-        margin-right: 48px;
-        font-size: 1.5rem;
-    }
-
+    /* Disposicion de los links del header y hover*/
     .ul-display li {
         display: inline;
         align-items: center;
         padding: 4px;
         margin-inline: 20px;
-
-
     }
 
     .ul-display li:hover {
@@ -2272,48 +2193,77 @@
         transition: 1s;
     }
 
-    .div2 {
-        margin-left: 62px;
+    /* Estilo de las listas sin viñetas dentro del header*/
+    .estilo-lista {
+        margin-left: -320px;
+        margin-top: 10px;
+        list-style: none;
+
     }
 
-    /****************************************************  INDEX*****************************************************/
+    /*Botón menu hamburguesa a la derecha del header*/
+    .custom-button {
+        background-color: #ddd0c8;
+        border: none;
 
-    /********************************************************************************************************************
-*****************************************************************************************************************/
-    /*aplicando flexbox en el footer*/
+    }
+
+    /*********************************************************** FOOTER ************************************************
+    *******************************************************************************************************************/
+
+    /* Estilo de los links del footer */
+    
+    
+
     .footer1 {
-        margin-top: 20px;
-        margin-bottom: 10px;
+        list-style: none;
+        padding-bottom: 5px;
+        /*  margin-top: 20px;*/
+        margin-bottom: -10px;
         display: flex;
         justify-items: center;
-        padding: 5px;
-        background-color: #dac9bf;
-        border-bottom: 1px solid #323232;
+        padding-left: 30px;
+        background-color: #c3c3c4;
+        /*  border-bottom: 1px solid #323232;*/
         border-top: 1px solid #323232;
         justify-content: space-around;
     }
 
     .footer1 label {
         display: flex;
-        padding-bottom: 10px;
+        /* padding-bottom: 10px;*/
     }
 
     .footer1 div {
         margin-inline: 50px;
     }
+    
 
     .color-footer {
 
         color: #323232;
         font-size: 1.4rem;
+        font-weight: bolder;
     }
 
     .div-footer1 label {
         justify-content: center;
     }
+    
+    ul .caja-1{
+        margin-left: 150px;
+    }
+    
+    ul .caja-2{
+        margin-left: 200px;
+    }
+    
+    ul .caja-3{
+        margin-left: 50px;
+    }
 
     .label-div3 {
-        margin-left: 12px;
+        margin-left: 5px;
     }
 
     #div4,
@@ -2322,11 +2272,14 @@
     }
 
     .imagen-footer {
-        margin-top: 35px;
+        margin-top: 10px;
         display: flex;
-        flex-direction: column;
         align-items: center;
 
+    }
+    
+    .imagen-footer img{
+        margin-right: 10px;
     }
 
 
@@ -2422,9 +2375,6 @@
         color: black;
     }
 
-    .grid-container1 .div-5 {
-        display: none;
-    }
 
     /*******************************************FINALIZA INDEX.HTML GRID-CONTAINER1****************************************/
 
@@ -2916,7 +2866,7 @@
         font-size: 1.5rem;
         color: #323232;
     }
-
+    
     .grid-container6 .div-5 {
         grid-area: item-5;
         border-radius: 5px;
@@ -2943,7 +2893,7 @@
 
     .grid-container7 {
         margin: 35px;
-        border: 2px solid chartreuse;
+        border: 1px solid black;
         display: grid;
         grid-template-columns: .25fr 1fr .625fr .25fr;
         grid-template-rows: repeat(5, auto);
@@ -2958,27 +2908,28 @@
     }
 
     .grid-container7 .div-1 {
+        margin-top: 20px;
         grid-area: item-1;
-        background-color: #9cb850;
+       /* background-color: #9cb850;*/
         border-radius: 5px;
         display: flex;
         justify-content: center;
     }
 
     .grid-container7 .div-1 h2 {
-        font-size: 3vw;
+        justify-content: center;
+        font-size: 3rem;
         line-height: 1.2;
-        margin: 0;
         max-width: 100%;
         overflow-wrap: break-word;
-        color: #a750b8;
+        color: black;
     }
 
     .grid-container7 .div-2 {
         /* margin-left: 15px;*/
         padding-bottom: 15px;
         grid-area: item-2;
-        background-color: #dd9595;
+       /* background-color: #dd9595;*/
         border-radius: 5px;
         display: flex;
         justify-content: center;
@@ -2998,13 +2949,13 @@
     .grid-container7 .div-2 label {
         display: flex;
         flex-direction: column;
+        color: #323232;
         font-size: 1rem;
-        color: #eaf0f1;
     }
 
     .grid-container7 .div-3 {
         grid-area: item-3;
-        background-color: #e722cd;
+       /* background-color: #e722cd;*/
         border-radius: 5px;
         display: flex;
         flex-direction: column;
@@ -3013,8 +2964,8 @@
     }
 
     .grid-container7 .div-3 div label {
+        color: #323232;
         font-size: 1rem;
-        color: #eaf0f1;
         margin-bottom: 20px;
         display: flex;
         flex-direction: column;
@@ -3023,7 +2974,7 @@
     .grid-container7 .div-4 {
         margin-right: 20px;
         grid-area: item-4;
-        background-color: rgb(4, 248, 77);
+       /* background-color: rgb(4, 248, 77);*/
         border-radius: 5px;
         display: flex;
         flex-direction: column;
@@ -3035,8 +2986,24 @@
     .grid-container7 .div-4 label {
         display: flex;
         flex-direction: column;
+        color: #323232;
         font-size: 1rem;
-        color: #eaf0f1;
+    }
+    
+    .grid-container7 .div-4 button{
+        margin-top: 25px;
+        padding: 5px;
+        color: black;
+        font-size: 1rem;
+        background-color: #DDD0C8;
+        border: 1.5px solid black;
+        border-radius: 25px;
+        text-transform: capitalize;
+    }
+    
+    .grid-container7 .div-4 button:hover{
+        background-color: aliceblue;
+        transition: 1s;
     }
 
     .grid-container7 .data {
@@ -3047,18 +3014,33 @@
     .grid-container7 .div-5 {
         margin-right: 20px;
         grid-area: item-5;
-        background-color: rgb(119, 122, 120);
+       /* background-color: rgb(119, 122, 120);*/
         border-radius: 5px;
         display: flex;
         flex-direction: column;
         align-items: center;
+    }
+    
+    .grid-container7 .div-5 img{
+        margin-top: 10px;
+        width: 150px;
+        height: auto;
+    }
+    
+    .grid-container7 .div-5 label{
+        padding-top: 60px;
+        display: flex;
+        flex-direction: column;
+        color: #323232;
+        font-size: 1rem;
     }
 
     .grid-container7 .div-6 {
         /*  margin-left: 15px;*/
         padding-bottom: 15px;
         grid-area: item-6;
-        background-color: #f585b4; /*#f1ddd6  equivalente en canva*/
+      /*  background-color: #f585b4;*/
+        /*#f1ddd6  equivalente en canva*/
         border-radius: 5px;
         display: flex;
         justify-content: center;
@@ -3069,13 +3051,13 @@
     .grid-container7 .div-6 label {
         display: flex;
         flex-direction: column;
+        color: #323232;
         font-size: 1rem;
-        color: #eaf0f1;
     }
 
     .grid-container7 .div-6 img {
         margin-top: 10px;
-        margin-left: 12px;
+        margin-left: -3px;
         max-width: 100%;
         height: auto;
         display: block;
@@ -3091,7 +3073,7 @@
 
     .grid-container8 {
         margin: 35px;
-        border: 2px solid chartreuse;
+        border: 1px solid black;
         display: grid;
         grid-template-columns: repeat(6, .4fr);
         grid-template-rows: repeat(4, auto);
@@ -3101,34 +3083,39 @@
         grid-template-areas:
             ". . item-1 item-1 . ."
             "item-2 item-2 item-2 item-5 item-5 item-5"
-            "item-3 item-4 . item-6 item-6 item-6"
-            "item-7 . . item-6 item-6 item-6"
+            ". item-3 item-3 item-4 item-4 ."
+            ". item-7 item-7 item-7 . ."
         ;
         justify-content: center;
     }
 
     .grid-container8 .div-1 {
+        margin-top: 20px;
         grid-area: item-1;
-        background-color: #9cb850;
+       /* background-color: #9cb850;*/
         border-radius: 5px;
         display: flex;
         justify-content: center;
     }
 
     .grid-container8 .div-1 h2 {
+        display: flex;
+        justify-content: center;
         font-size: 3rem;
-        /* Ajusta el tamaño de fuente basado en el ancho de la ventana */
         line-height: 1.2;
-        margin: 0;
         max-width: 100%;
         overflow-wrap: break-word;
-        color: #a750b8;
+        color: black;
     }
 
     .grid-container8 .div-2 {
+        margin-top: 25px;
+        margin-left: 15px;
+        margin-right: 5px;
+        border: 1px solid black;
         grid-area: item-2;
-        background-color: #506cb8;
-        border-radius: 5px;
+       /* background-color: #506cb8;*/
+       /* border-radius: 5px;*/
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -3144,35 +3131,61 @@
     .grid-container8 .div-2 img {
         margin-top: 20px;
         margin-bottom: 20px;
+        border-radius: 5px;
         max-width: 100%;
         height: auto;
         display: block;
     }
 
     .grid-container8 .div-3 {
+        margin-top: 25px;
         grid-area: item-3;
-        background-color: #a750b8;
+      /*  background-color: #a750b8;*/
         border-radius: 5px;
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
+    }
+    
+    .grid-container8 .div-3 img{
+        grid-area: item-3;
+        /*  background-color: #a750b8;*/
+          border-radius: 5px;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
     }
 
     .grid-container8 .div-4 {
+        margin-top: 25px;
         grid-area: item-4;
-        background-color: #b85050;
+      /*  background-color: #b85050;*/
         border-radius: 5px;
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
     }
+    
+    .grid-container8 .div-4 img{
+        grid-area: item-3;
+        /*  background-color: #a750b8;*/
+          border-radius: 5px;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+    }
 
     .grid-container8 .div-5 {
+        margin-top: 25px;
+        margin-right: 15px;
         grid-area: item-5;
-        background-color: #f10505;
-        border-radius: 5px;
+       /* background-color: #f10505;*/
+       /* border-radius: 5px;*/
+       border:  1px solid black;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -3180,6 +3193,9 @@
     }
 
     .grid-container8 .div-5 p {
+        text-align: justify;
+        padding-top: 40px;
+        margin: 10px;
         font-size: 1rem;
     }
 
@@ -3195,21 +3211,27 @@
     }
 
     .div-5 button {
-        margin-bottom: 15px;
+        margin-top: 25px;
+        padding: 5px;
+        color: black;
+        font-size: 1rem;
+        background-color: #DDD0C8;
+        border: 1.5px solid black;
+        border-radius: 25px;
+        text-transform: capitalize;
     }
-
-    .grid-container8 .div-6 {
-        grid-area: item-6;
-        background-color: #ecb80d;
-        border-radius: 5px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
+  
+    .div-5 button:hover {
+        background-color: aliceblue;
+        transition: 1s;
     }
 
     .grid-container8 .div-7 {
+        margin-top: 10px;
+        margin-left: 125px;
+        margin-bottom: 20px;
         grid-area: item-7;
-        background-color: #500dec;
+     /* background-color: #500dec;*/
         border-radius: 5px;
         display: flex;
         flex-direction: column;
@@ -3229,7 +3251,7 @@
 
     .grid-container9 {
         margin: 35px;
-        border: 2px solid chartreuse;
+        border: 1px solid black;
         display: grid;
         grid-template-columns: repeat(5, 1fr);
         grid-template-rows: repeat(2, auto);
@@ -3245,25 +3267,27 @@
     }
 
     .grid-container9 .div-1 {
+        margin-top: 20px;
         grid-area: item-1;
-        background-color: #9cb850;
+       /* background-color: #9cb850;*/
         border-radius: 5px;
         display: flex;
         justify-content: center;
     }
 
     .grid-container9 .div-1 h2 {
+        display: flex;
+        justify-content: center;
         font-size: 3rem;
         line-height: 1.2;
-        margin: 0;
         max-width: 100%;
         overflow-wrap: break-word;
-        color: #a750b8;
+        color: black;
     }
 
     .grid-container9 .div-2 {
         grid-area: item-2;
-        background-color: #dd9595;
+       /* background-color: #dd9595;*/
         border-radius: 5px;
         display: flex;
         flex-direction: column;
@@ -3271,8 +3295,9 @@
     }
 
     .grid-container9 .div-2 label {
+        color: #323232;
         font-size: 1rem;
-        color: #eaf0f1;
+        padding-bottom: 10px;
     }
 
 
@@ -3285,7 +3310,7 @@
 
     .grid-container9 .div-3 {
         grid-area: item-3;
-        background-color: #e722cd;
+     /*   background-color: #e722cd;*/
         border-radius: 5px;
         display: flex;
         flex-direction: column;
@@ -3300,14 +3325,15 @@
     }
 
     .grid-container9 .div-3 label {
+        color: #323232;
         font-size: 1rem;
-        color: #eaf0f1;
+        padding-bottom: 10px;
     }
 
 
     .grid-container9 .div-4 {
         grid-area: item-4;
-        background-color: rgb(247, 46, 72);
+       /* background-color: rgb(247, 46, 72);*/
         border-radius: 5px;
         display: flex;
         flex-direction: column;
@@ -3322,14 +3348,15 @@
     }
 
     .grid-container9 .div-4 label {
+        color: #323232;
         font-size: 1rem;
-        color: #eaf0f1;
+        padding-bottom: 10px;
     }
 
 
     .grid-container9 .div-5 {
         grid-area: item-5;
-        background-color: brown;
+      /* background-color: brown;*/
         border-radius: 5px;
         display: flex;
         flex-direction: column;
@@ -3338,20 +3365,21 @@
 
     .grid-container9 .div-5 img {
         max-width: 100%;
-        height: auto;
+        height: 200px;
         display: block;
         border-radius: 5px;
     }
 
     .grid-container9 .div-5 label {
+        color: #323232;
         font-size: 1rem;
-        color: #eaf0f1;
+        padding-bottom: 10px;
     }
 
 
     .grid-container9 .div-6 {
         grid-area: item-6;
-        background-color: rgb(102, 69, 190);
+       /* background-color: rgb(102, 69, 190);*/
         border-radius: 5px;
         display: flex;
         flex-direction: column;
@@ -3360,14 +3388,15 @@
 
     .grid-container9 .div-6 img {
         max-width: 100%;
-        height: auto;
+        height: 200px;
         display: block;
         border-radius: 5px;
     }
 
     .grid-container9 .div-6 label {
+        color: #323232;
         font-size: 1rem;
-        color: #eaf0f1;
+        padding-bottom: 10px;
     }
 
     /*******************************************FINALIZA TIENDA.HTML GRID-CONTAINER9****************************************/
