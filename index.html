@@ -65,8 +65,7 @@
         <!-- Uso la etiqueta header donde maqueto el encabezado de la página que se repite en el resto de los archivos -->
 
         <div>
-            <a href="index.html"> <video class="logo-header" src="assets/videos/v-logo1.mp4" autoplay
-                    muted></video></a>
+            <a href="index.html"> <img class="logo-header" src="assets/images/logo-maxitienda2.png" alt="logo-maxitienda">
         </div>
 
         <div class="div2">
@@ -81,9 +80,16 @@
             </nav>
         </div>
 
-        <div class="div-menu">
-            <label class="label-color" for="Menu">Menu</label>
-            <div><img src="../assets/images/icono-menu.png" alt="icono-menu"></div>
+        <div class="btn-group">
+            <button class="btn custom-button" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <img src="assets/images/hamburgues.png" alt="Icono" style="width: 20px; height: 20px;">
+            </button>
+            <ul class="dropdown-menu">
+                <li><a href="#nosotros" class="dropdown-item">Sobre nosotros ></a></li>
+                <li> <a href="https://www.tripadvisor.com.ar/Attractions-g312741-Activities-c26-Buenos_Aires_Capital_Federal_District.html"
+                        class="dropdown-item" target="_blank">Ir a otras Tiendas ></a></li>
+                <li> <a href="https://wa.link/py7rqm" class="dropdown-item" target="_blank">Whatsupp ></a></li>
+            </ul>
         </div>
 
     </div>
@@ -92,7 +98,7 @@
         <section class="grid-container1">
 
             <div class="div-1">
-                <h3>video con texto en movimiento, fondo negro</h3>
+                <video src="assets/videos/promos-izq.mp4" loop autoplay muted></video>
             </div>
 
             <div class="div-2">
@@ -104,7 +110,7 @@
             </div>
 
             <div class="div-3">
-                <h3>video con texto en movimiento, fondo negro</h3>
+                <video src="assets/videos/promos-der.mp4" loop autoplay muted></video>
             </div>
 
             <div class="div-4">
@@ -309,9 +315,8 @@
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-        crossorigin="anonymous">
-    </script>
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
+        </script>
 </body>
 
 </html>
